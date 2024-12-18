@@ -7,6 +7,8 @@ resource "google_storage_bucket" "bucket" {
     enabled = var.enable_versioning
   }
 
+  uniform_bucket_level_access = var.bucket_level_access
+
   lifecycle_rule {
     condition {
       age = var.lifecycle_rule_age
