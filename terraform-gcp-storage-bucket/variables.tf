@@ -21,12 +21,6 @@ variable "enable_versioning" {
   default     = false
 }
 
-variable "lifecycle_rule_age" {
-  description = "The number of days before lifecycle rules delete objects"
-  type        = number
-  default     = 30
-}
-
 variable "bucket_level_access"{
   description = " (Optional, Default: false) Enables Uniform bucket-level access access to a bucket."
   type        = bool
