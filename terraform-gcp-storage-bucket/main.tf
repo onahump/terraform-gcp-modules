@@ -7,13 +7,4 @@ resource "google_storage_bucket" "bucket" {
   versioning {
     enabled = var.enable_versioning
   }
-
-  lifecycle_rule {
-    condition {
-      age = var.lifecycle_rule_age
-    }
-    action {
-      type = "Delete"
-    }
-  }
 }
